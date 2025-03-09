@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:pink;
+}
+
+.container {
+  width: 500px; /* Increase width */
+  margin: 50px auto; /* Center and add top margin */
+  padding: 50px;
+  height: 550px;
+  background:white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Adds space from the top */
+  min-height: 300px;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 15px; /* Increase spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightcoral; /* Set all buttons to pink */
+  color: white; /* Ensure text is readable */
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+}
+button:focus {
+  outline: none; /* Ensures no outline appears on focus */
+  box-shadow: pink; /* Removes any unwanted shadow */
+}
+button:hover {
+  background-color: lightcoral;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between filter buttons */
+  margin-bottom: 15px; /* Add bottom margin */
+}
+.filter-buttons button {
+  background-color: pink; /* Pink for filter buttons */
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background-color: #ff69b4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: teal;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px pink;
+}
+
+li span {
+  flex: 1;
+  margin-left: 10px;
+  color: #333;
+}
+
+li input[type="checkbox"] {
+  cursor: pointer;
+}
+
+li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ff9800; /* Orange background */
+  color: white; /* Ensure icon/text is visible */
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white; /* Blue */
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between tasks */
+}
+.delete-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  margin-top: 20px;
+  
+}
+.todo-list button {
+  margin-bottom: 20px;
+}
+
+  background-color: pink;{
+color: white;
+}
+.delete-buttons button {
+  background-color: pink;
+  color: white;
+}
+.completed-task {
+  text-decoration: line-through; /* Strikethrough text */
+  opacity: 0.5; /* Faded effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Default Light Mode */
+.container {
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+.container.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Ensure headers are visible in Dark Mode */
+.container.dark h2 {
+  color: white;
+}
