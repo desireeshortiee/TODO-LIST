@@ -72,7 +72,7 @@ const TodoList = () => {
       <div>
         <button onClick={() => setFilter("All")} className="filter-button">All</button>
         <button onClick={() => setFilter("Done")} className="filter-button">Done</button>
-        <button onClick={() => setFilter("Pending")} className="filter-button">Pending</button>
+        <button onClick={() => setFilter("Todo")} className="filter-button">Todo</button>
       </div>
 
       <ul className="task-list">
